@@ -26,4 +26,4 @@ structlog==23.2.0
 
 # 数据验证
 pydantic==2.5.0
-pydantic-settings==2.1.0
+pydantic-settings==2.13.1
