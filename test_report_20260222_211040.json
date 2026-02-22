@@ -1,0 +1,417 @@
+{
+  "total_tests": 20,
+  "passed_tests": 18,
+  "failed_tests": 2,
+  "success_rate": 90.0,
+  "avg_response_time": 0.3991095,
+  "total_response_time": 7.1839710000000006,
+  "results": [
+    {
+      "success": true,
+      "endpoint": "/",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.002262,
+      "data": {
+        "message": "欢迎使用飞书AI助手API",
+        "timestamp": "2026-02-22T13:10:30.141159"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/health",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.279398,
+      "data": {
+        "status": "healthy",
+        "service": "feishu-ai-assistant",
+        "feishu_connected": true,
+        "timestamp": "2026-02-22T13:10:30.543153"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/version",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.007463,
+      "data": {
+        "version": "1.0.0",
+        "name": "Feishu AI Assistant",
+        "description": "基于FastAPI和飞书开放平台构建的智能助手系统",
+        "timestamp": "2026-02-22T13:10:30.727335"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/system/info",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.259657,
+      "data": {
+        "success": true,
+        "data": {
+          "app_id": "cli_a91e...",
+          "connected": true,
+          "timestamp": "2026-02-22T13:10:31.162069",
+          "version": "1.0.0"
+        },
+        "timestamp": "2026-02-22T13:10:31.162091"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/calendar/calendars",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.27198,
+      "data": {
+        "success": true,
+        "data": [
+          {
+            "calendar_id": "feishu.cn_5mxQD7X9zGVAgQ5jY42qvd@group.calendar.feishu.cn",
+            "summary": "openclaw",
+            "description": "",
+            "permissions": "private",
+            "color": -11034625,
+            "type": "primary",
+            "summary_alias": ""
+          }
+        ],
+        "count": 1,
+        "timestamp": "2026-02-22T13:10:31.599431"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/calendar/today",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.65705,
+      "data": {
+        "success": true,
+        "data": [],
+        "count": 0,
+        "date": "2026-02-22",
+        "timestamp": "2026-02-22T13:10:32.419578"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/calendar/upcoming",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.464281,
+      "data": {
+        "success": true,
+        "data": [],
+        "count": 0,
+        "hours": 24,
+        "timestamp": "2026-02-22T13:10:33.008209"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/calendar/analysis",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.774682,
+      "data": {
+        "success": true,
+        "data": {
+          "total_events": 0,
+          "total_hours": 0,
+          "busy_percentage": 0,
+          "recommendations": [
+            "今天没有安排，可以自由安排工作"
+          ]
+        },
+        "timestamp": "2026-02-22T13:10:33.928245"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/calendar/daily-summary",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.538182,
+      "data": {
+        "success": true,
+        "data": {
+          "date": "2026-02-22",
+          "today_events_count": 0,
+          "upcoming_events_count": 0,
+          "schedule_analysis": {
+            "total_events": 0,
+            "total_hours": 0,
+            "busy_percentage": 0,
+            "recommendations": [
+              "今天没有安排，可以自由安排工作"
+            ]
+          },
+          "next_event": null,
+          "recommendations": [
+            "今天没有安排，可以自由安排工作"
+          ]
+        },
+        "timestamp": "2026-02-22T13:10:34.638177"
+      },
+      "error": null
+    },
+    {
+      "success": false,
+      "endpoint": "/calendar/events",
+      "method": "POST",
+      "status_code": 405,
+      "expected_status": 200,
+      "response_time": 0.004991,
+      "data": null,
+      "error": "Expected 200, got 405"
+    },
+    {
+      "success": true,
+      "endpoint": "/tasks",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.116264,
+      "data": {
+        "success": true,
+        "data": [],
+        "count": 0,
+        "filters": {
+          "status": null,
+          "priority": null
+        },
+        "timestamp": "2026-02-22T13:10:35.095947"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/tasks/overdue",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.108826,
+      "data": {
+        "success": true,
+        "data": [],
+        "count": 0,
+        "timestamp": "2026-02-22T13:10:35.371941"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/tasks/due-today",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.106077,
+      "data": {
+        "success": true,
+        "data": [],
+        "count": 0,
+        "timestamp": "2026-02-22T13:10:35.652513"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/tasks/prioritize",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.121033,
+      "data": {
+        "success": true,
+        "data": [],
+        "count": 0,
+        "timestamp": "2026-02-22T13:10:35.905326"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/tasks/analysis",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.674589,
+      "data": {
+        "success": true,
+        "data": {
+          "total_tasks": 0,
+          "todo_tasks": 0,
+          "in_progress_tasks": 0,
+          "done_tasks": 0,
+          "overdue_tasks": 0,
+          "due_today_tasks": 0,
+          "priority_distribution": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "completion_rate": 0,
+          "recommendations": [],
+          "top_priority_tasks": []
+        },
+        "timestamp": "2026-02-22T13:10:36.739818"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/tasks/daily-todo",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.385296,
+      "data": {
+        "success": true,
+        "data": {
+          "date": "2026-02-22",
+          "total_tasks": 0,
+          "overdue_count": 0,
+          "due_today_count": 0,
+          "high_priority_count": 0,
+          "recommended_order": [],
+          "tasks": []
+        },
+        "timestamp": "2026-02-22T13:10:37.300213"
+      },
+      "error": null
+    },
+    {
+      "success": false,
+      "endpoint": "/tasks",
+      "method": "POST",
+      "status_code": 422,
+      "expected_status": 200,
+      "response_time": 0.004727,
+      "data": null,
+      "error": "Expected 200, got 422"
+    },
+    {
+      "success": true,
+      "endpoint": "/documents",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.466102,
+      "data": {
+        "success": true,
+        "data": [],
+        "count": 0,
+        "timestamp": "2026-02-22T13:10:37.992167"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/users",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 0.363893,
+      "data": {
+        "success": true,
+        "data": [
+          {
+            "user_id": "ag5cbad7",
+            "name": null,
+            "email": null,
+            "mobile": null,
+            "avatar": null,
+            "status": null,
+            "department_ids": null
+          }
+        ],
+        "count": 1,
+        "timestamp": "2026-02-22T13:10:38.500832"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "endpoint": "/assistant/daily-report",
+      "method": "GET",
+      "status_code": 200,
+      "expected_status": 200,
+      "response_time": 1.586936,
+      "data": {
+        "success": true,
+        "data": {
+          "date": "2026-02-22",
+          "calendar": {
+            "date": "2026-02-22",
+            "today_events_count": 0,
+            "upcoming_events_count": 0,
+            "schedule_analysis": {
+              "total_events": 0,
+              "total_hours": 0,
+              "busy_percentage": 0,
+              "recommendations": [
+                "今天没有安排，可以自由安排工作"
+              ]
+            },
+            "next_event": null,
+            "recommendations": [
+              "今天没有安排，可以自由安排工作"
+            ]
+          },
+          "tasks": {
+            "total_tasks": 0,
+            "todo_tasks": 0,
+            "in_progress_tasks": 0,
+            "done_tasks": 0,
+            "overdue_tasks": 0,
+            "due_today_tasks": 0,
+            "priority_distribution": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0
+            },
+            "completion_rate": 0,
+            "recommendations": [],
+            "top_priority_tasks": []
+          },
+          "daily_todo": {
+            "date": "2026-02-22",
+            "total_tasks": 0,
+            "overdue_count": 0,
+            "due_today_count": 0,
+            "high_priority_count": 0,
+            "recommended_order": [],
+            "tasks": []
+          },
+          "timestamp": "2026-02-22T13:10:40.194779"
+        },
+        "message": "每日报告生成成功",
+        "timestamp": "2026-02-22T13:10:40.194792"
+      },
+      "error": null
+    }
+  ]
+}

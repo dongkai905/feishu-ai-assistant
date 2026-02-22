@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-02-22T14:32:54.314629",
+  "base_url": "http://localhost:8000",
+  "total_tests": 8,
+  "passed_tests": 8,
+  "failed_tests": 0,
+  "results": [
+    {
+      "name": "GET 根端点",
+      "success": true,
+      "details": "状态码: 200",
+      "timestamp": "2026-02-22T14:32:51.643350"
+    },
+    {
+      "name": "GET 健康检查",
+      "success": true,
+      "details": "状态码: 200",
+      "timestamp": "2026-02-22T14:32:52.060712"
+    },
+    {
+      "name": "GET 版本信息",
+      "success": true,
+      "details": "状态码: 200",
+      "timestamp": "2026-02-22T14:32:52.065603"
+    },
+    {
+      "name": "GET API文档",
+      "success": true,
+      "details": "状态码: 200",
+      "timestamp": "2026-02-22T14:32:52.069338"
+    },
+    {
+      "name": "飞书日历连接",
+      "success": true,
+      "details": "状态码: 200, 今日事件: 0个",
+      "timestamp": "2026-02-22T14:32:52.288928"
+    },
+    {
+      "name": "消息发送",
+      "success": true,
+      "details": "状态码: 200, 消息ID: om_x100b569e7f8560a4c1404708c3ebae4",
+      "timestamp": "2026-02-22T14:32:52.827633"
+    },
+    {
+      "name": "创建会议",
+      "success": true,
+      "details": "状态码: 200, 会议ID: bc952db1-02fb-4725-85b3-da61e1749770_0",
+      "timestamp": "2026-02-22T14:32:53.890391"
+    },
+    {
+      "name": "创建任务",
+      "success": true,
+      "details": "状态码: 200, 任务ID: t100005",
+      "timestamp": "2026-02-22T14:32:54.314391"
+    }
+  ]
+}
