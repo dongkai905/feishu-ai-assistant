@@ -21,7 +21,7 @@ flower==2.0.1
 httpx==0.25.1
 
 # 监控和日志
-prometheus-fastapi-instrumentator==5.9.1
+prometheus-fastapi-instrumentator==7.1.0
 structlog==23.2.0
 
 # 数据验证
