@@ -18,7 +18,7 @@ python-multipart==0.0.6
 # 异步和任务队列
 celery==5.3.4
 flower==2.0.1
-httpx==0.25.1
+httpx==0.28.1
 
 # 监控和日志
 prometheus-fastapi-instrumentator==5.9.1
